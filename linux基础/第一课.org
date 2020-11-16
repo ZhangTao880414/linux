@@ -1,232 +1,232 @@
-#+TITLE: µÚÒ»¿Î
-* 1.1 linuxµÄ·¢ÐÐ°æ±¾
+#+TITLE: ç¬¬ä¸€è¯¾
+* 1.1 linuxçš„å‘è¡Œç‰ˆæœ¬
   centos redhat ubuntu
 
-  ÎÊÌâ£ºÒª²»ÊÇ¿¼Ö¤µÄÎÊÌâ£»
-* 1.2 ´´½¨ÐéÄâ»ú
-  - a. vmwareºÍvirtualbox
-  - b. ¾µÏñµÄÎÊÌâ£ºcentos6ºÍcentos7
-  - c. vmwareÍø¿¨Ä£Ê½£º
+  é—®é¢˜ï¼šè¦ä¸æ˜¯è€ƒè¯çš„é—®é¢˜ï¼›
+* 1.2 åˆ›å»ºè™šæ‹Ÿæœº
+  - a. vmwareå’Œvirtualbox
+  - b. é•œåƒçš„é—®é¢˜ï¼šcentos6å’Œcentos7
+  - c. vmwareç½‘å¡æ¨¡å¼ï¼š
     
-    - ½öÖ÷»ú£ºÐéÄâ»úÓÃÍøÏßºÍpcÁ¬½Ó
+    - ä»…ä¸»æœºï¼šè™šæ‹Ÿæœºç”¨ç½‘çº¿å’Œpcè¿žæŽ¥
 
       [[file:image/host-only.png]]
 
-    - ÇÅ½Ó£ºÐéÄâ»úºÍ±¾»ú²¢ÁÐ¹ØÏµ£¬Íø¶ÎÒ»Ñù£¬£¨Ïàµ±ÓÚÁ½¸öpc£©
+    - æ¡¥æŽ¥ï¼šè™šæ‹Ÿæœºå’Œæœ¬æœºå¹¶åˆ—å…³ç³»ï¼Œç½‘æ®µä¸€æ ·ï¼Œï¼ˆç›¸å½“äºŽä¸¤ä¸ªpcï¼‰
        
       [[file:image/bridge.png]]
 
-       Í¨¹ý²»Í¬µÄmacµØÖ·ÉÏÍø
+       é€šè¿‡ä¸åŒçš„macåœ°å€ä¸Šç½‘
 
-    - natÄ£Ê½£ºpcÂ·ÓÉ×ª·¢£¬ÐéÄâ»ú°Ñpcµ±³ÉÂ·ÓÉÆ÷
+    - natæ¨¡å¼ï¼špcè·¯ç”±è½¬å‘ï¼Œè™šæ‹ŸæœºæŠŠpcå½“æˆè·¯ç”±å™¨
 
       [[file:image/nat.png]]
       
-    - ±¸×¢
+    - å¤‡æ³¨
        
-      nat½â¾öÎÊÌâ: ipµØÖ·²»¹»ÓÃ;
+      natè§£å†³é—®é¢˜: ipåœ°å€ä¸å¤Ÿç”¨;
 
-      ÄÚÍøÄ£Ê½£¨ÄÚÍøÄ£Ê½£©£¬vmware8Íø¿¨×Ô¶¯Éú³ÉÁËÒ»¸öip 192.168.62.1£¬°ó¶¨ÔÚÁËÖ÷»úÉÏ£¬ºÍÐéÄâ»úÊÇÒ»¸öÍøÂç£¬ËùÒÔ¿ÉÒÔÁ¬½ÓÐéÄâ»ú; 
+      å†…ç½‘æ¨¡å¼ï¼ˆå†…ç½‘æ¨¡å¼ï¼‰ï¼Œvmware8ç½‘å¡è‡ªåŠ¨ç”Ÿæˆäº†ä¸€ä¸ªip 192.168.62.1ï¼Œç»‘å®šåœ¨äº†ä¸»æœºä¸Šï¼Œå’Œè™šæ‹Ÿæœºæ˜¯ä¸€ä¸ªç½‘ç»œï¼Œæ‰€ä»¥å¯ä»¥è¿žæŽ¥è™šæ‹Ÿæœº; 
 
-      ÐéÄâ»úÉÏÍø£¬ÊÇÍ¨¹ýÐéÄâ»úµÄnatÉè±¸£¨.2µÄÍø¹Ø£©£¬×ª»»³ÉÖ÷»úµÄipµØÖ·£¨macµØÖ·£©£¬ÔÚÍâÃæ×¥°üµÄ»°£¬×¥µÄ¶¼ÊÇÖ÷»úµÄip
+      è™šæ‹Ÿæœºä¸Šç½‘ï¼Œæ˜¯é€šè¿‡è™šæ‹Ÿæœºçš„natè®¾å¤‡ï¼ˆ.2çš„ç½‘å…³ï¼‰ï¼Œè½¬æ¢æˆä¸»æœºçš„ipåœ°å€ï¼ˆmacåœ°å€ï¼‰ï¼Œåœ¨å¤–é¢æŠ“åŒ…çš„è¯ï¼ŒæŠ“çš„éƒ½æ˜¯ä¸»æœºçš„ip
 
-      vmware8Íø¿¨½ûÓÃ£¬±¾»ú²»ÄÜºÍÐéÄâ»úÍ¨ÐÅ£¬µ«ÊÇÐéÄâ»úÊÇ¿ÉÒÔÉÏÍøµÄ;
-  - d. 32Î»ºÍ64Î» £¨x86£© 8gÄÚ´æÎªÇø·Ö
+      vmware8ç½‘å¡ç¦ç”¨ï¼Œæœ¬æœºä¸èƒ½å’Œè™šæ‹Ÿæœºé€šä¿¡ï¼Œä½†æ˜¯è™šæ‹Ÿæœºæ˜¯å¯ä»¥ä¸Šç½‘çš„;
+  - d. 32ä½å’Œ64ä½ ï¼ˆx86ï¼‰ 8gå†…å­˜ä¸ºåŒºåˆ†
 
-    (centos7ÒÔÉÏ¶¼ÊÇ64Î»)32Î»Ö»Ö§³Ö4gÄÚ´æ
-  - e. vmwareÆô¶¯CentOSÐéÄâ»ú±¨´íÎÞ·¨´ò¿ª´ÅÅÌ
+    (centos7ä»¥ä¸Šéƒ½æ˜¯64ä½)32ä½åªæ”¯æŒ4gå†…å­˜
+  - e. vmwareå¯åŠ¨CentOSè™šæ‹ŸæœºæŠ¥é”™æ— æ³•æ‰“å¼€ç£ç›˜
 
-    ´ò²»¿ª´ÅÅÌ¡°D:\centos\CentOS 64 Î»-000001.vmdk¡±»òËüËùÒÀÀµµÄÄ³¸ö¿ìÕÕ´ÅÅÌ¡£ ¿ªÆôÄ£¿é DiskEarly µÄ²Ù×÷Ê§°Ü¡£ Î´ÄÜÆô¶¯ÐéÄâ»ú¡£
+    æ‰“ä¸å¼€ç£ç›˜â€œD:\centos\CentOS 64 ä½-000001.vmdkâ€æˆ–å®ƒæ‰€ä¾èµ–çš„æŸä¸ªå¿«ç…§ç£ç›˜ã€‚ å¼€å¯æ¨¡å— DiskEarly çš„æ“ä½œå¤±è´¥ã€‚ æœªèƒ½å¯åŠ¨è™šæ‹Ÿæœºã€‚
     
-    ´ò²»¿ª´ÅÅÌ"H:\centos-6.0-710\CentOS 64 Î».vmdk"»òËüËùÒÀÀµµÄÄ³¸ö¿ìÕÕ´ÅÅÌ " Ô­Òò: Î´ÄÜËø¶¨ÎÄ¼þ"
+    æ‰“ä¸å¼€ç£ç›˜"H:\centos-6.0-710\CentOS 64 ä½.vmdk"æˆ–å®ƒæ‰€ä¾èµ–çš„æŸä¸ªå¿«ç…§ç£ç›˜ " åŽŸå› : æœªèƒ½é”å®šæ–‡ä»¶"
 
-    ÕâÖ÷ÒªÊÇ·ÇÕý³£¹ØÐéÄâ»úÔì³ÉµÄ£¬¾ßÌåÔ­ÒòÈçÏÂ£º
+    è¿™ä¸»è¦æ˜¯éžæ­£å¸¸å…³è™šæ‹Ÿæœºé€ æˆçš„ï¼Œå…·ä½“åŽŸå› å¦‚ä¸‹ï¼š
 
-    ÐéÄâ»úÎªÁË·ÀÖ¹ÓÐ¶àÐéÄâ»ú¹²ÓÃÒ»¸öÐéÄâ´ÅÅÌ£¨¾ÍÊÇºó ×ºÎª.vmdkÄÇ¸öÎÄ¼þ£©Ôì³ÉÊý¾ÝµÄ¶ªÊ§ºÍÐÔÄÜµÄÏ÷Èõ£¬Ã¿´ÎÆô¶¯ÐéÄâ»úÊ±»á¸øÃ¿¸öÐéÄâ´ÅÅÌ¼ÓÒ»¸ö´ÅÅÌËø£¨Ò²¾ÍÊÇºó×ºÎª.lckµÄÄÇ¸öÎÄ¼þ¼Ð£©¶ÔÐéÄâ´ÅÅÌÎÄ¼þ ½øÐÐËø¶¨±£»¤ÔÚ¹ØµôÐéÄâ»úÊ±ÓÖ»á×Ô¶¯É¾³ýÄÇ¸ö´ÅÅÌËøÎÄ¼þ¡£µ±ÐéÄâ»ú·ÇÕý³£¹Ø±Õ£¬¾Í»á³öÏÖÒ»¸öÎÄ¼þ¼Ð´øÓÐ×º.lck£¬²»»á×Ô¶¯É¾³ý£¬²Å»áÒýÆðÕâÑù±¨´í¡£ÕâÑùÏÂ´ÎÆô¶¯ÐéÄâ»úÊ±¾Í»áµ¯³öÉÏÃæµÄÄÇ¸ö ´íÎó¡£°´ÕÕÉÏÃæµÄ½âÊÍ£¬ÔÚÐéÄâ»ú±¨µÄÄÇ¸öÂ·¾¶ÏÂÉ¾³ýÁËÄÇ¸ö.lckÎÄ¼þ¼ÐÈ«²¿É¾µô£¬ÔÙµãÆô¶¯¸ÃÐéÄâ»ú¼´¿É¡£
+    è™šæ‹Ÿæœºä¸ºäº†é˜²æ­¢æœ‰å¤šè™šæ‹Ÿæœºå…±ç”¨ä¸€ä¸ªè™šæ‹Ÿç£ç›˜ï¼ˆå°±æ˜¯åŽ ç¼€ä¸º.vmdké‚£ä¸ªæ–‡ä»¶ï¼‰é€ æˆæ•°æ®çš„ä¸¢å¤±å’Œæ€§èƒ½çš„å‰Šå¼±ï¼Œæ¯æ¬¡å¯åŠ¨è™šæ‹Ÿæœºæ—¶ä¼šç»™æ¯ä¸ªè™šæ‹Ÿç£ç›˜åŠ ä¸€ä¸ªç£ç›˜é”ï¼ˆä¹Ÿå°±æ˜¯åŽç¼€ä¸º.lckçš„é‚£ä¸ªæ–‡ä»¶å¤¹ï¼‰å¯¹è™šæ‹Ÿç£ç›˜æ–‡ä»¶ è¿›è¡Œé”å®šä¿æŠ¤åœ¨å…³æŽ‰è™šæ‹Ÿæœºæ—¶åˆä¼šè‡ªåŠ¨åˆ é™¤é‚£ä¸ªç£ç›˜é”æ–‡ä»¶ã€‚å½“è™šæ‹Ÿæœºéžæ­£å¸¸å…³é—­ï¼Œå°±ä¼šå‡ºçŽ°ä¸€ä¸ªæ–‡ä»¶å¤¹å¸¦æœ‰ç¼€.lckï¼Œä¸ä¼šè‡ªåŠ¨åˆ é™¤ï¼Œæ‰ä¼šå¼•èµ·è¿™æ ·æŠ¥é”™ã€‚è¿™æ ·ä¸‹æ¬¡å¯åŠ¨è™šæ‹Ÿæœºæ—¶å°±ä¼šå¼¹å‡ºä¸Šé¢çš„é‚£ä¸ª é”™è¯¯ã€‚æŒ‰ç…§ä¸Šé¢çš„è§£é‡Šï¼Œåœ¨è™šæ‹ŸæœºæŠ¥çš„é‚£ä¸ªè·¯å¾„ä¸‹åˆ é™¤äº†é‚£ä¸ª.lckæ–‡ä»¶å¤¹å…¨éƒ¨åˆ æŽ‰ï¼Œå†ç‚¹å¯åŠ¨è¯¥è™šæ‹Ÿæœºå³å¯ã€‚
 
-* 1.3 °²×°ÏµÍ³
+* 1.3 å®‰è£…ç³»ç»Ÿ
   #+BEGIN_EXAMPLE
-  ÏÔÊ¾Æ÷ÉèÖÃ·Ö±æÂÊÎª800*600
-  ·ÖÇø£º/ 20g
-  /swap ÄÚ´æµÄ2±¶ ×î´ó8g£¨ºóÆÚ¿ÉÒÔÔö¼Ó£© http://www.apelearn.com/study_v2/chapter9.html#swap dd
+  æ˜¾ç¤ºå™¨è®¾ç½®åˆ†è¾¨çŽ‡ä¸º800*600
+  åˆ†åŒºï¼š/ 20g
+  /swap å†…å­˜çš„2å€ æœ€å¤§8gï¼ˆåŽæœŸå¯ä»¥å¢žåŠ ï¼‰ http://www.apelearn.com/study_v2/chapter9.html#swap dd
   /boot 200m
-  /export Ê£ÓàµÄËùÓÐ
+  /export å‰©ä½™çš„æ‰€æœ‰
   #+END_EXAMPLE
-  À©Õ¹: Ä£Äâ¿ª»ú¹ÊÕÏ [[http://www.apelearn.com/bbs/thread-5472-1-1.html]]
+  æ‰©å±•: æ¨¡æ‹Ÿå¼€æœºæ•…éšœ [[http://www.apelearn.com/bbs/thread-5472-1-1.html]]
 
-* 1.4.ÅäÖÃip
-  - dhclient (¶à´ÎÔËÐÐkillall dhclient)
+* 1.4.é…ç½®ip
+  - dhclient (å¤šæ¬¡è¿è¡Œkillall dhclient)
   - ifconfig ip a
   - /etc/sysconfig/network-scripts/ifcfg-eth0 (vim)
-    - vi /etc/sysconfig/network-scripts/ifcfg-eth0 ±à¼­Íø¿¨ÅäÖÃÎÄ¼þ
+    - vi /etc/sysconfig/network-scripts/ifcfg-eth0 ç¼–è¾‘ç½‘å¡é…ç½®æ–‡ä»¶
       #+BEGIN_EXAMPLE
-      BOOTPROTO dhcp¸ÄÎª static ±íÊ¾¾²Ì¬ip
-      IPADDR= ÎÒÃÇ×Ô¶¨ÒåµÄip£¨ÊÇ×Ô¶¯»ñÈ¡µ½µÄip£¬²¢²»ÊÇËæ±ãÐ´Ò»¸ö¾Í¿ÉÒÔÓÃ£©
-      NETMASK=×ÓÍøÑÚÂë
-      GATEWAY=Íø¹Ø£¨¿ÉÒÔÍ¨¹ý route -n ²é¿´µ½£©
-      ONBOOT=yes ±íÊ¾¿ª»úÆô¶¯Íø¿¨£¬·ñÔòÍø¿¨ÊÇdownµÄ
-      DNS1=ºóÃæ¸úDNS·þÎñÆ÷µÄip£¬¿ÉÒÔ¼ÌÐøÌí¼ÓµÚ¶þ¸öDNS2=
+      BOOTPROTO dhcpæ”¹ä¸º static è¡¨ç¤ºé™æ€ip
+      IPADDR= æˆ‘ä»¬è‡ªå®šä¹‰çš„ipï¼ˆæ˜¯è‡ªåŠ¨èŽ·å–åˆ°çš„ipï¼Œå¹¶ä¸æ˜¯éšä¾¿å†™ä¸€ä¸ªå°±å¯ä»¥ç”¨ï¼‰
+      NETMASK=å­ç½‘æŽ©ç 
+      GATEWAY=ç½‘å…³ï¼ˆå¯ä»¥é€šè¿‡ route -n æŸ¥çœ‹åˆ°ï¼‰
+      ONBOOT=yes è¡¨ç¤ºå¼€æœºå¯åŠ¨ç½‘å¡ï¼Œå¦åˆ™ç½‘å¡æ˜¯downçš„
+      DNS1=åŽé¢è·ŸDNSæœåŠ¡å™¨çš„ipï¼Œå¯ä»¥ç»§ç»­æ·»åŠ ç¬¬äºŒä¸ªDNS2=
       #+END_EXAMPLE
   - vim /etc/resolv.conf
 
-* 1.5.Ô¶³ÌÁ¬½Ó¹¤¾ß
+* 1.5.è¿œç¨‹è¿žæŽ¥å·¥å…·
   =xshell=
   =putty=
   =securecrt=
 
-* 1.6 ÃØÔ¿ÑéÖ¤
+* 1.6 ç§˜é’¥éªŒè¯
 
-  ÎÊÌâÉèÏëÓÐÈçÏÂÁ½Ì¨µçÄÔ, ip·Ö±ðÎª
+  é—®é¢˜è®¾æƒ³æœ‰å¦‚ä¸‹ä¸¤å°ç”µè„‘, ipåˆ†åˆ«ä¸º
   #+BEGIN_EXAMPLE
   ip1:192.168.1.10
   ip2:192.168.1.11
   #+END_EXAMPLE
-  ÏÖÔÚ, ÎÒÃÇÐèÒªÍ¨¹ýÃØÔ¿À´½øÐÐ»¥·Ã
+  çŽ°åœ¨, æˆ‘ä»¬éœ€è¦é€šè¿‡ç§˜é’¥æ¥è¿›è¡Œäº’è®¿
 
-** ¾ßÌå²Ù×÷
+** å…·ä½“æ“ä½œ
 
-   - ÔÚip1ÉÏÖ´ÐÐ
+   - åœ¨ip1ä¸Šæ‰§è¡Œ
      
      [[file:image/ip1.png]]
 
-     ÕâÀïÊ×ÏÈ¶¨ÒåµÄÊÇË½Ô¿µÄ´æ·ÅÂ·¾¶¡£½Ó×ÅÊÇ¶¨Òå¹«Ô¿µÄ´æ·ÅÂ·¾¶
+     è¿™é‡Œé¦–å…ˆå®šä¹‰çš„æ˜¯ç§é’¥çš„å­˜æ”¾è·¯å¾„ã€‚æŽ¥ç€æ˜¯å®šä¹‰å…¬é’¥çš„å­˜æ”¾è·¯å¾„
 
      [[file:image/ip1-1.png]]
 
-   - ÔÚip2ÉÏÖ´ÐÐ
+   - åœ¨ip2ä¸Šæ‰§è¡Œ
      #+BEGIN_EXAMPLE
      mkdir /root/.ssh
      chmod 600 /root/.ssh
      cd /root/.ssh
      vim authorized_keys
      #+END_EXAMPLE
-     ½«ip1ÖÐµÄ¹«Ô¿ÄÚÈÝÕ³Ìùµ½ =authorized_keys= ÖÐ
+     å°†ip1ä¸­çš„å…¬é’¥å†…å®¹ç²˜è´´åˆ° =authorized_keys= ä¸­
 
-     - ²é¿´selinuxµÄ×´Ì¬, =sestatus=
+     - æŸ¥çœ‹selinuxçš„çŠ¶æ€, =sestatus=
 
        [[file:image/sestatus.png]]
 
-       ÕâÀïÒÑ¾­¹Ø±Õ£¬ÈôÃ»ÓÐ¹Ø±Õ£¬ÔÝÊ±¹Ø±ÕÓÃÕâ¸öÃüÁî: =setenforce 0=
+       è¿™é‡Œå·²ç»å…³é—­ï¼Œè‹¥æ²¡æœ‰å…³é—­ï¼Œæš‚æ—¶å…³é—­ç”¨è¿™ä¸ªå‘½ä»¤: =setenforce 0=
 
-       ÓÀ¾ÃÐÔ¹Ø±Õ: =vim /etc/selinux/config=
+       æ°¸ä¹…æ€§å…³é—­: =vim /etc/selinux/config=
        #+BEGIN_EXAMPLE
        SELINUX=disabled
        #+END_EXAMPLE
 
-     - Çå¿Õ·À»ðÇ½¹æÔò
+     - æ¸…ç©ºé˜²ç«å¢™è§„åˆ™
        #+BEGIN_EXAMPLE
        ipstables -F
        service iptables save
        #+END_EXAMPLE
-       »òÕßÖ´ÐÐ =service iptables stop= ¼´¿É
+       æˆ–è€…æ‰§è¡Œ =service iptables stop= å³å¯
 
-     - ³¢ÊÔÔÚip1ÉÏÁ¬½Óip2
+     - å°è¯•åœ¨ip1ä¸Šè¿žæŽ¥ip2
 
        #+BEGIN_EXAMPLE
        ssh 192.168.1.11
        #+END_EXAMPLE
-       Èô³öÏÖ ssh: command not found, Ôò =yum install -y openssh-clients=
+       è‹¥å‡ºçŽ° ssh: command not found, åˆ™ =yum install -y openssh-clients=
 
-       °²×°Íê³Éºó, ÔÙ´ÎÔËÐÐ =ssh 192.168.1.11= ¾Í¿ÉÒÔ³É¹¦µÇÂ¼ip2;
+       å®‰è£…å®ŒæˆåŽ, å†æ¬¡è¿è¡Œ =ssh 192.168.1.11= å°±å¯ä»¥æˆåŠŸç™»å½•ip2;
 
-       °´ÕÕÏàÍ¬µÄ·½·¨ÔÚip2ÉÏÖ´ÐÐÏàÍ¬µÄ²½Öè, Á½Ì¨Ö÷»ú±ã¿ÉÊµÐÐÃâÃÜ»¥Ïà·ÃÎÊ;
+       æŒ‰ç…§ç›¸åŒçš„æ–¹æ³•åœ¨ip2ä¸Šæ‰§è¡Œç›¸åŒçš„æ­¥éª¤, ä¸¤å°ä¸»æœºä¾¿å¯å®žè¡Œå…å¯†äº’ç›¸è®¿é—®;
 
-** ³£¼ûÎÊÌâ
+** å¸¸è§é—®é¢˜
 
-   1. µÚÒ»´ÎµÇÂ¼µÄÊ±ºòÐèÒª»¥ÐÅ£¬ÐèÒªyes
+   1. ç¬¬ä¸€æ¬¡ç™»å½•çš„æ—¶å€™éœ€è¦äº’ä¿¡ï¼Œéœ€è¦yes
 
-   2. ÎÄ¼þÃûÐ´´íÁË
+   2. æ–‡ä»¶åå†™é”™äº†
 
-   3. pubÃ»ÓÐÉú³É
+   3. pubæ²¡æœ‰ç”Ÿæˆ
 
    4. disabled selinux
 
-   5. authorized_keys È¨ÏÞÓÐÒªÇó£¬Ò»¶¨ÊÇ600£¬ÌØ±ðÊÇ·ÇrootÓÃ»§µÄÊ±ºò
+   5. authorized_keys æƒé™æœ‰è¦æ±‚ï¼Œä¸€å®šæ˜¯600ï¼Œç‰¹åˆ«æ˜¯éžrootç”¨æˆ·çš„æ—¶å€™
 
-   6. SecureCRTÉú³ÉÃÜÔ¿¼°Ê¹ÓÃÃÜÔ¿µÇÂ¼·þÎñÆ÷, ¿É²Î¿¼ [[http://jicki.blog.51cto.com/1323993/1361264][Á´½Ó]]
-* 1.7 ÔËÐÐ¼¶±ð
-  7¸öÔËÐÐ¼¶±ð£º0 ¹Ø»ú 1µ¥ÓÃ»§ 2²»´øNFS·þÎñµÄ3¼¶±ð 3ÃüÁîÐÐÄ£Ê½ 4±£Áô 5Í¼ÐÎ 6ÖØÆô
+   6. SecureCRTç”Ÿæˆå¯†é’¥åŠä½¿ç”¨å¯†é’¥ç™»å½•æœåŠ¡å™¨, å¯å‚è€ƒ [[http://jicki.blog.51cto.com/1323993/1361264][é“¾æŽ¥]]
+* 1.7 è¿è¡Œçº§åˆ«
+  7ä¸ªè¿è¡Œçº§åˆ«ï¼š0 å…³æœº 1å•ç”¨æˆ· 2ä¸å¸¦NFSæœåŠ¡çš„3çº§åˆ« 3å‘½ä»¤è¡Œæ¨¡å¼ 4ä¿ç•™ 5å›¾å½¢ 6é‡å¯
 
   [[file:image/7_level.png]]
-* 1.8 µ¥ÓÃ»§Ä£Ê½ÏÂÐÞ¸ÄrootÃÜÂë
+* 1.8 å•ç”¨æˆ·æ¨¡å¼ä¸‹ä¿®æ”¹rootå¯†ç 
 ** centos6
-   - ÖØÆôLinux, 3ÃëÖÓÄÚ, °´Ò»ÏÂ»Ø³µ¼ü;
-   - ÈôÓÐ¼ÓgrubÃÜÂë, ÐèÒªÏÈ°´p, ÊäÈëÃÜÂë·½¿É½øÐÐºóÃæµÄ²Ù×÷;
-   - °´e, Ñ¡ÔñµÚ¶þÐÐ, ÔÙ°´e;
-   - ÔÚ×îºóÃæ¼ÓÈësingle»òÕßÊý×Ö1»òÕß×ÖÄ¸s;
-   - ÏÈ°´»Ø³µÔÙ°´b;
+   - é‡å¯Linux, 3ç§’é’Ÿå†…, æŒ‰ä¸€ä¸‹å›žè½¦é”®;
+   - è‹¥æœ‰åŠ grubå¯†ç , éœ€è¦å…ˆæŒ‰p, è¾“å…¥å¯†ç æ–¹å¯è¿›è¡ŒåŽé¢çš„æ“ä½œ;
+   - æŒ‰e, é€‰æ‹©ç¬¬äºŒè¡Œ, å†æŒ‰e;
+   - åœ¨æœ€åŽé¢åŠ å…¥singleæˆ–è€…æ•°å­—1æˆ–è€…å­—æ¯s;
+   - å…ˆæŒ‰å›žè½¦å†æŒ‰b;
 
-   ÕâÑù¾Í³É¹¦½øÈëµ¥ÓÃ»§Ä£Ê½£¬ÎÒÃÇ¿ÉÒÔÐÞ¸ÄrootÃÜÂë
+   è¿™æ ·å°±æˆåŠŸè¿›å…¥å•ç”¨æˆ·æ¨¡å¼ï¼Œæˆ‘ä»¬å¯ä»¥ä¿®æ”¹rootå¯†ç 
 
 ** centos7
 
-   1. cenos7²ÉÓÃµÄÊÇgrub2½çÃæ»áÓÐÁ¬¸öÈë¿Ú£¬Ò»¸öÊÇÕý³£ÏµÍ³Èë¿Ú£¬Ò»¸öÊÇ¾ÈÔ®Ä£Ê½
+   1. cenos7é‡‡ç”¨çš„æ˜¯grub2ç•Œé¢ä¼šæœ‰è¿žä¸ªå…¥å£ï¼Œä¸€ä¸ªæ˜¯æ­£å¸¸ç³»ç»Ÿå…¥å£ï¼Œä¸€ä¸ªæ˜¯æ•‘æ´æ¨¡å¼
 
-   2. ÐÞ¸Ägrub2Òýµ¼
+   2. ä¿®æ”¹grub2å¼•å¯¼
 
       #+BEGIN_EXAMPLE
-      Õý³£ÏµÍ³ÏÂ°´ÏÂe
-      ÖªµÀlinux16¿ªÍ·£¬°Ñro¸Ä³Érw Ö»¶Á¸Ä³É¿ÉÐ´
-      rhgb quiet »»³Éinit=/bin/bash Ö¸¶¨shell»·¾³
-      °´ÏÂctrl+xÖØÆôÏµÍ³
+      æ­£å¸¸ç³»ç»Ÿä¸‹æŒ‰ä¸‹e
+      çŸ¥é“linux16å¼€å¤´ï¼ŒæŠŠroæ”¹æˆrw åªè¯»æ”¹æˆå¯å†™
+      rhgb quiet æ¢æˆinit=/bin/bash æŒ‡å®šshellçŽ¯å¢ƒ
+      æŒ‰ä¸‹ctrl+xé‡å¯ç³»ç»Ÿ
       #+END_EXAMPLE
 
-   3. ÐÞ¸ÄÃÜÂë
+   3. ä¿®æ”¹å¯†ç 
       #+BEGIN_EXAMPLE
       passwd
-      touch /.autorelabel ¾ÝËµÊÇselinexÔÚÖØÆôºó¸úÐÂlabel£¨É¾³ýÖØÐÂ´´½¨£©
-      exec /sbin/init ÖØÆô
+      touch /.autorelabel æ®è¯´æ˜¯selinexåœ¨é‡å¯åŽè·Ÿæ–°labelï¼ˆåˆ é™¤é‡æ–°åˆ›å»ºï¼‰
+      exec /sbin/init é‡å¯
       #+END_EXAMPLE
-* 1.9 linuxÏµÍ³»·¾³±äÁ¿
+* 1.9 linuxç³»ç»ŸçŽ¯å¢ƒå˜é‡
   #+BEGIN_EXAMPLE
   echo $PATH
   $PATH=$PATH:./ (vim /etc/profile)
   #+END_EXAMPLE
-  =~/.bash_profile=: Ã¿¸öÓÃ»§¶¼¿ÉÊ¹ÓÃ¸ÃÎÄ¼þÊäÈë×¨ÓÃÓÚ×Ô¼ºÊ¹ÓÃµÄshellÐÅÏ¢,µ±ÓÃ»§µÇÂ¼Ê±,¸ÃÎÄ¼þ½ö½öÖ´ÐÐÒ»´Î!Ä¬ÈÏÇé¿öÏÂ,ËûÉèÖÃÒ»Ð©»·¾³±äÁ¿,Ö´ÐÐÓÃ»§µÄ.bashrcÎÄ¼þ
+  =~/.bash_profile=: æ¯ä¸ªç”¨æˆ·éƒ½å¯ä½¿ç”¨è¯¥æ–‡ä»¶è¾“å…¥ä¸“ç”¨äºŽè‡ªå·±ä½¿ç”¨çš„shellä¿¡æ¯,å½“ç”¨æˆ·ç™»å½•æ—¶,è¯¥æ–‡ä»¶ä»…ä»…æ‰§è¡Œä¸€æ¬¡!é»˜è®¤æƒ…å†µä¸‹,ä»–è®¾ç½®ä¸€äº›çŽ¯å¢ƒå˜é‡,æ‰§è¡Œç”¨æˆ·çš„.bashrcæ–‡ä»¶
   
-  =~/.bashrc=: ¸ÃÎÄ¼þ°üº¬×¨ÓÃÓÚÄãµÄbash shellµÄbashÐÅÏ¢,µ±µÇÂ¼Ê±ÒÔ¼°Ã¿´Î´ò¿ªÐÂµÄshellÊ±,¸Ã¸ÃÎÄ¼þ±»¶ÁÈ¡.
+  =~/.bashrc=: è¯¥æ–‡ä»¶åŒ…å«ä¸“ç”¨äºŽä½ çš„bash shellçš„bashä¿¡æ¯,å½“ç™»å½•æ—¶ä»¥åŠæ¯æ¬¡æ‰“å¼€æ–°çš„shellæ—¶,è¯¥è¯¥æ–‡ä»¶è¢«è¯»å–.
 
-  =source /etc/profile= =./etc/profile= Á½ÌõÃüÁîÐ§¹ûÏàÍ¬
+  =source /etc/profile= =./etc/profile= ä¸¤æ¡å‘½ä»¤æ•ˆæžœç›¸åŒ
 
   #+BEGIN_EXAMPLE
   alias xiang='ls -lhtr'
   unalias xiang
   #+END_EXAMPLE
   
-  - .bash_profile Óë .bashrc µÄÇø±ð
+  - .bash_profile ä¸Ž .bashrc çš„åŒºåˆ«
 
    =.bash_profile= is executed for login shells, while =.bashrc= is executed for interactive non-login shells
 
-  - login shell Óë non-login shell µÄÇø±ð
+  - login shell ä¸Ž non-login shell çš„åŒºåˆ«
 
-    - µ±ÄãÖ±½ÓÔÚ»úÆ÷login½çÃæµÇÂ½¡¢Ê¹ÓÃsshµÇÂ½»òÕßsuÇÐ»»ÓÃ»§µÇÂ½
-      Ê±, =.bash_profile= »á±»µ÷ÓÃÀ´³õÊ¼»¯shell»·¾³
+    - å½“ä½ ç›´æŽ¥åœ¨æœºå™¨loginç•Œé¢ç™»é™†ã€ä½¿ç”¨sshç™»é™†æˆ–è€…suåˆ‡æ¢ç”¨æˆ·ç™»é™†
+      æ—¶, =.bash_profile= ä¼šè¢«è°ƒç”¨æ¥åˆå§‹åŒ–shellçŽ¯å¢ƒ
 
-      =.bash_profile= ÖÐÓÐÈçÏÂÄÚÈÝ
+      =.bash_profile= ä¸­æœ‰å¦‚ä¸‹å†…å®¹
       #+BEGIN_EXAMPLE
       if [ -f ~/.bashrc ]; then
       . ~/.bashrc
       fi 
       #+END_EXAMPLE
-      ËµÃ÷: ÓÉ´ËµÃ³ö, =.bash_profile= ÎÄ¼þÄ¬ÈÏµ÷ÓÃ.bashrcÎÄ¼þ
-    - µ±Äã²»µÇÂ½ÏµÍ³¶øÊ¹ÓÃsshÖ±½ÓÔÚÔ¶¶ËÖ´ÐÐÃüÁî£¬.bashrc »á±»µ÷ÓÃ
-    - µ±ÄãÒÑ¾­µÇÂ½ÏµÍ³ºó£¬Ã¿´ò¿ªÒ»¸öÐÂµÄTerminalÊ±£¬.bashrc ¶¼»á±»ÔÙ´Îµ÷ÓÃ
-* 1.10 ¾ÈÔ®Ä£Ê½
-  - ÈôÊÇÕæ»ú£¬ÐèÒªÓÐ°²×°¹âÅÌ»òÕßUÅÌ£¬ÖØÆô½øÈëbiosµ÷³É¹âÇýÆô¶¯£¬Ñ¡Ôñ ¡®Rescue installed system¡¯ 
-  - ÓïÑÔÎÒÃÇÄ¬ÈÏ£¬¼üÅÌÀàÐÍÒ²Ä¬ÈÏ
-  - Rescue Method Ò²±£³ÖÄ¬ÈÏ
-  - ÊÇ·ñÔÚÊ¹ÓÃrescueÄ£Ê½µÄÊ±ºòÆôÓÃÍøÂç£¬Õâ¸ö¸ù¾ÝÊµ¼ÊÇé¿ö£¬ÔÚÕâÀï°¢ÃúÑ¡ÔñNO(Ê¹ÓÃtab¼ü) 
-  - ÈýÖÖÄ£Ê½¿ÉÒÔÑ¡Ôñ:
-    - shell Ä£Ê½»áÖ±½Ó½øÈëÃüÁîÐÐ, ¿ÉÒÔ½øÐÐµÄ²Ù×÷ÓÐ±à¼­ÎÄ¼þ¡¢ÐÞ¸ÄÓÃ»§ÃÜÂëµÈ;
-    - fakd ÊÇÕï¶ÏÄ£Ê½
-    - reboot »áÖ±½ÓÖØÆô
+      è¯´æ˜Ž: ç”±æ­¤å¾—å‡º, =.bash_profile= æ–‡ä»¶é»˜è®¤è°ƒç”¨.bashrcæ–‡ä»¶
+    - å½“ä½ ä¸ç™»é™†ç³»ç»Ÿè€Œä½¿ç”¨sshç›´æŽ¥åœ¨è¿œç«¯æ‰§è¡Œå‘½ä»¤ï¼Œ.bashrc ä¼šè¢«è°ƒç”¨
+    - å½“ä½ å·²ç»ç™»é™†ç³»ç»ŸåŽï¼Œæ¯æ‰“å¼€ä¸€ä¸ªæ–°çš„Terminalæ—¶ï¼Œ.bashrc éƒ½ä¼šè¢«å†æ¬¡è°ƒç”¨
+* 1.10 æ•‘æ´æ¨¡å¼
+  - è‹¥æ˜¯çœŸæœºï¼Œéœ€è¦æœ‰å®‰è£…å…‰ç›˜æˆ–è€…Uç›˜ï¼Œé‡å¯è¿›å…¥biosè°ƒæˆå…‰é©±å¯åŠ¨ï¼Œé€‰æ‹© â€˜Rescue installed systemâ€™ 
+  - è¯­è¨€æˆ‘ä»¬é»˜è®¤ï¼Œé”®ç›˜ç±»åž‹ä¹Ÿé»˜è®¤
+  - Rescue Method ä¹Ÿä¿æŒé»˜è®¤
+  - æ˜¯å¦åœ¨ä½¿ç”¨rescueæ¨¡å¼çš„æ—¶å€™å¯ç”¨ç½‘ç»œï¼Œè¿™ä¸ªæ ¹æ®å®žé™…æƒ…å†µï¼Œåœ¨è¿™é‡Œé˜¿é“­é€‰æ‹©NO(ä½¿ç”¨tabé”®) 
+  - ä¸‰ç§æ¨¡å¼å¯ä»¥é€‰æ‹©:
+    - shell æ¨¡å¼ä¼šç›´æŽ¥è¿›å…¥å‘½ä»¤è¡Œ, å¯ä»¥è¿›è¡Œçš„æ“ä½œæœ‰ç¼–è¾‘æ–‡ä»¶ã€ä¿®æ”¹ç”¨æˆ·å¯†ç ç­‰;
+    - fakd æ˜¯è¯Šæ–­æ¨¡å¼
+    - reboot ä¼šç›´æŽ¥é‡å¯
 
-  Ñ¡ÔñµÚÒ»¸öshellÄ£Ê½
+  é€‰æ‹©ç¬¬ä¸€ä¸ªshellæ¨¡å¼
 
-  Ö´ÐÐÒ»¸öÃüÁî£ºchroot /mnt/sysimage
+  æ‰§è¡Œä¸€ä¸ªå‘½ä»¤ï¼šchroot /mnt/sysimage
 
-* 1.11 ³£ÓÃÃüÁî
-** cdÃüÁî
+* 1.11 å¸¸ç”¨å‘½ä»¤
+** cdå‘½ä»¤
    #+BEGIN_EXAMPLE
    cd
    cd ~
@@ -234,40 +234,42 @@
    cd ..
    #+END_EXAMPLE
    
-** lsÃüÁî
+** lså‘½ä»¤
    #+BEGIN_EXAMPLE
    ls -lhtr
    ls -d
    ls -a
    #+END_EXAMPLE
 
-** echoÃüÁî
+** echoå‘½ä»¤
    #+BEGIN_EXAMPLE
    echo 'hello world!'
    #+END_EXAMPLE
 
-** Ä¿Â¼ÃüÁî
+** ç›®å½•å‘½ä»¤
    #+BEGIN_EXAMPLE
    mkdir
    rmdir    rm -rf
    #+END_EXAMPLE
 
-** cpÃüÁî
+** cpå‘½ä»¤
    #+BEGIN_EXAMPLE
    cp -r
    #+END_EXAMPLE
 
-** mvÃüÁî
-   - ÒÆ¶¯µØ·½ mv 1.txt /home/admin/
-   - ÖØÃüÃû mv 1.txt 2.tx
+** mvå‘½ä»¤
+   - ç§»åŠ¨åœ°æ–¹ mv 1.txt /home/admin/
+   - é‡å‘½å mv 1.txt 2.tx
 
-* 1.12 ¿ì½Ý¼ü
+* 1.12 å¿«æ·é”®
    #+BEGIN_EXAMPLE
    ctrl+l
    ctrl+d
    ctrl+c
    ctrl+z     jobs    fg
    tab
-   ctrl + u É¾³ý¹â±êÇ°ËùÓÐ×Ö·û
-   ctrl + k É¾³ý¹â±êºóËùÓÐ×Ö·û
+   ctrl + u åˆ é™¤å…‰æ ‡å‰æ‰€æœ‰å­—ç¬¦
+   ctrl + k åˆ é™¤å…‰æ ‡åŽæ‰€æœ‰å­—ç¬¦
    #+END_EXAMPLE
+
+å¥½å¥½å­¦ä¹ 
