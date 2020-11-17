@@ -86,5 +86,3 @@
 
      点击后, 如果本地较新, 则会出现 *Push origin* , 如果远程仓库较新, 则出现 *Pull origin* , 这时再次点击, 将使得本地仓库和远程仓库保持一致;
      
-    
-https://www.issedu365.com/application/applearn/learn/?flag=1&status=1
